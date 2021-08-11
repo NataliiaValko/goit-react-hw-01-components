@@ -1,7 +1,7 @@
-import Profile from "./components/Profile";
-import Statistics from "./components/Statistics";
-import FriendList from "./components/FriendList";
-import TransactionHistory from "./components/TransactionHistory";
+import Profile from "./components/task-1/Profile";
+import Statistics from "./components/task-2/Statistics";
+import FriendList from "./components/task-3/FriendList";
+import TransactionHistory from "./components/task-4/TransactionHistory";
 
 import statisticalData from "./data/statisticalData.json";
 import userData from "./data/userData.json";

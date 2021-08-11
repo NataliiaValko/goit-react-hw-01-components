@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
+import Avatar from "../common/Avatar";
+import Name from "../common/Name";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div>
+    <li className="item">
       <span className={`${isOnline}`}></span>
-      <img className="avatar" src={avatar} alt={`avatar ${name}`} width="48" />
-      <p className="name">{name}</p>
-    </div>
+      <Avatar url={avatar} name={name} width={48} />
+      <Name value={name} />
+    </li>
   );
 };
 
