@@ -1,11 +1,16 @@
 import PropTypes from "prop-types";
-import TableHead from "./TableHead";
 import TableRow from "./TableRow";
 
 const TransactionHistory = ({ items }) => {
   return (
     <table className="transaction-history">
-      <TableHead />
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
           <TableRow key={id} type={type} amount={amount} currency={currency} />

@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import Avatar from "../common/Avatar";
 import Name from "../common/Name";
-// import Tag from "./Tag";
-// import Location from "./Location";
 
 const Description = ({ avatar, name, tag, location }) => {
   return (

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Avatar from "../common/Avatar";
 import Name from "../common/Name";
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendItem = ({ avatar, name, isOnline }) => {
   return (
     <li className="item">
       <span className={`${isOnline}`}></span>
@@ -12,10 +12,10 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   );
 };
 
-FriendListItem.propTypes = {
+FriendItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };
 
-export default FriendListItem;
+export default FriendItem;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const StatListItem = ({ label, percentage }) => {
+const StatItem = ({ label, percentage }) => {
   return (
     <li className="item">
       <span className="label">{label}</span>
@@ -9,9 +9,9 @@ const StatListItem = ({ label, percentage }) => {
   );
 };
 
-StatListItem.propTypes = {
+StatItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };
 
-export default StatListItem;
+export default StatItem;
