@@ -1,7 +1,8 @@
-import Profile from "./components/task-1/Profile";
-import Statistics from "./components/task-2/Statistics";
-import FriendList from "./components/task-3/FriendList";
-import TransactionHistory from "./components/task-4/TransactionHistory";
+import Container from "./components/common/Container/Container";
+import Profile from "./components/task-1/Profile/Profile";
+import Statistics from "./components/task-2/Statistics/Statistics";
+import FriendList from "./components/task-3/FriendList/FriendList";
+import TransactionHistory from "./components/task-4/TransactionHistory/TransactionHistory";
 
 import statisticalData from "./data/statisticalData.json";
 import userData from "./data/userData.json";
@@ -11,7 +12,7 @@ import transactionsData from "./data/transactionsData.json";
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         name={userData.name}
         tag={userData.tag}
@@ -19,16 +20,10 @@ const App = () => {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <div>
-        <Statistics title="Upload stats" stats={statisticalData} />
-      </div>
-      <div>
-        <FriendList friends={friendsData} />
-      </div>
-      <div>
-        <TransactionHistory items={transactionsData} />
-      </div>
-    </div>
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <FriendList friends={friendsData} />
+      <TransactionHistory items={transactionsData} />
+    </Container>
   );
 };
 

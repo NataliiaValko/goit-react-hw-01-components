@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import TableData from "./TableData";
+import s from "./TableRow.module.css";
 
 const TableRow = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <TableData value={type} />
-      <TableData value={amount} />
-      <TableData value={currency} />
+    <tr className={s.row}>
+      <td className={s.type}>{type}</td>
+      <td className={s.amount}>{amount}</td>
+      <td>{currency}</td>
     </tr>
   );
 };

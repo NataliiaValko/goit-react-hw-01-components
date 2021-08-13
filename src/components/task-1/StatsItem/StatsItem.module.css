@@ -1,0 +1,20 @@
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 5px;
+  border: 1px solid rgb(216, 213, 213);
+}
+
+.label {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: grey;
+}
+
+.quantity {
+  font-weight: bold;
+  margin-top: 5px;
+}

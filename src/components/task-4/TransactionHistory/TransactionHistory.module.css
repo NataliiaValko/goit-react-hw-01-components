@@ -1,0 +1,25 @@
+.transactionHistory {
+  width: 750px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-spacing: 0;
+}
+
+.head {
+  padding: 20px;
+  background-color: rgb(30, 180, 218);
+  border-color: rgb(30, 180, 218);
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cell {
+  width: 250px;
+}
+
+.cell:not(:last-child) {
+  border-right: 1px solid rgba(221, 221, 221, 0.87);
+}
